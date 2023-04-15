@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.test-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(150deg, #8800ff,#2f00ff);
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    width: 100%;
+    height: 150px;
+    font-size: 60px;
+    border-radius: 5px;
+}
+.clock div{
+    background-color: white;
+    height: 100%;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.clock span{
+    display: flex;
+    font-size: 150px;
+    color:#ffff;
+    justify-content: center;
+    align-items: self-end;
+}
+
+.clock #am{
+    font-size: 40px;
+}
+#day{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    color:#fff;
+    font-weight: 500;
+
+}
+.date-today{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 30px;
+    color:#fff;
+    font-weight: 500;
+    
+}
+
+/* test -2 style  */
+
+.test-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #7300ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;    
+}
+.container .input-box{
+    position: relative;
+}
+input{
+    width: 100%;
+    padding: 5px 0;
+    height: 50px;
+    outline: none;
+    border: 1px solid;
+    font-size: 20px;
+
+}
+.input-box .show-hide{
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    color: #545454;
+    transform: translate(-50%);
+}
+.indicator{
+    display: none;
+}
+.indicator.active {
+    display: block;
+    margin-top: 14px;
+}
+.indicator .icon-text{
+    display: flex;
+    align-items: center;
+}
+.indicator .error-icon{
+    margin-right: 10px;
+}
+.indicator .icon-text .text{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
